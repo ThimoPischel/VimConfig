@@ -29,6 +29,13 @@ call plug#end()
   "tnoremap <Esc> <C-\><C-n>
   nnoremap <C-f> :Rg<CR>  
   vnoremap <C-a> :EasyAlign
+  
+" Moving while typing
+  inoremap <C-l> <Esc>la
+  inoremap <C-h> <Esc>i
+
+" Scope Generator
+  inoremap <C-CR> {<CR>}<Esc>O
 
 " Esc
   nnoremap <C-j> <Esc>
@@ -43,8 +50,8 @@ call plug#end()
 
 " Buffer
   nnoremap <leader>bo :Buffers<CR>
-  nnoremap <leader>bk :bnext<CR>
-  nnoremap <leader>bj :bprev<CR>
+  nnoremap <leader>bn :bnext<CR>
+  nnoremap <leader>bp :bprev<CR>
   nnoremap <leader>bd :bdelete<CR>
 
 " Table
