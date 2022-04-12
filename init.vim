@@ -45,15 +45,15 @@ call plug#end()
   inoremap <C-n>< <><Esc>i
   
 " Esc
-  nnoremap <C-;> <Esc>
-  inoremap <C-;> <Esc>
-  vnoremap <C-;> <Esc>
-  snoremap <C-;> <Esc>
-  xnoremap <C-;> <Esc>
-  cnoremap <C-;> <ESC>
-  onoremap <C-;> <Esc>
-  lnoremap <C-;> <Esc>
-  tnoremap <C-;> <C-\><C-n> 
+  nnoremap <C-\> <Esc>
+  inoremap <C-\> <Esc>
+  vnoremap <C-\> <Esc>
+  snoremap <C-\> <Esc>
+  xnoremap <C-\> <Esc>
+  cnoremap <C-\> <ESC>
+  onoremap <C-\> <Esc>
+  lnoremap <C-\> <Esc>
+  tnoremap <C-\> <C-\><C-n> 
 
 " Buffer
   nnoremap <leader>bo :Buffers<CR>
