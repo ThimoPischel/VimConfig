@@ -26,27 +26,34 @@ call plug#end()
 
 """ keymapping
 
-  "tnoremap <Esc> <C-\><C-n>
   nnoremap <C-f> :Rg<CR>  
   vnoremap <C-a> :EasyAlign
   
 " Moving while typing
   inoremap <C-l> <Esc>la
   inoremap <C-h> <Esc>i
+  inoremap <C-k> <Esc>ka
+  inoremap <C-j> <Esc>ja
 
 " Scope Generator
-  inoremap <C-CR> {<CR>}<Esc>O
-
+  inoremap <C-n>{ {<CR>}<Esc>O
+  inoremap <C-n>} {}<Esc>i
+  inoremap <C-n>[ []<Esc>i
+  inoremap <C-n>( ()<Esc>i
+  inoremap <C-n>' ''<Esc>i
+  inoremap <C-n>" ""<Esc>i
+  inoremap <C-n>< <><Esc>i
+  
 " Esc
-  nnoremap <C-j> <Esc>
-  inoremap <C-j> <Esc>
-  vnoremap <C-j> <Esc>
-  snoremap <C-j> <Esc>
-  xnoremap <C-j> <Esc>
-  cnoremap <C-j> <ESC>
-  onoremap <C-j> <Esc>
-  lnoremap <C-j> <Esc>
-  tnoremap <C-j> <C-\><C-n> 
+  nnoremap <C-;> <Esc>
+  inoremap <C-;> <Esc>
+  vnoremap <C-;> <Esc>
+  snoremap <C-;> <Esc>
+  xnoremap <C-;> <Esc>
+  cnoremap <C-;> <ESC>
+  onoremap <C-;> <Esc>
+  lnoremap <C-;> <Esc>
+  tnoremap <C-;> <C-\><C-n> 
 
 " Buffer
   nnoremap <leader>bo :Buffers<CR>
